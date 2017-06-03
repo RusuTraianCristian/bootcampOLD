@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script>
+		<script src="main.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, height=device-height">
+		<title>Bootcamp - Level up your experience.</title>
+		<meta name="description" content="Demo 1 of the letters.js plugin for animating SVG letters creatively." />
+		<meta name="keywords" content="letters.js, plugin, SVG, letter, animation, segment, web design, demo" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="apple-touch-icon" href="favicon.png">
+        <link rel="stylesheet" href="etline/style.css">
+	</head>
+	<body>
+
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div id="login-info">
+            <div id="header">
+				<i class="fa fa-bars" style="font-size: 22px; padding: 10px 16px; cursor: pointer; line-height: 31px; margin-left: 250px;"></i>
+
+                <div class="nav-trigger">
+                    <div id="username"></div>
+                    <img class="headerphoto" src="" target="_blank">
+			    </div>
+
+                <div class="nav">
+                    <ul>
+                        <li>Switch account</li>
+						<li>Profile</li>
+                        <li>Settings</li>
+                        <li>GoTurbo</li>
+						<li>Send feedback</li>
+						<li>Help</li>
+                        <a id="btn-logout" class="btn btn-danger twitch-disconnect" href=""><li>Sign out</li></a>
+                    </ul>
+                </div>
+
+				<div class="profileupload">upload <span class="icon-upload"></span></div>
+				<div class="notifications"><span class="fa fa-bell"></span></div>
+            </div>
+            <div id="menu">
+				<a href="http://www.twitchbootcamp.com"><div class="navigator">bootcamp</div></a>
+                <div class="item"><i class="fa fa-bookmark-o" style="font-size: 13px; width: 40px; text-align: center;"></i> Bookmarks</div>
+                <div class="item"><i class="fa fa-star-o" style="font-size: 13px; width: 40px; text-align: center;"></i> Favorites</div>
+                <div class="item"><i class="fa fa-paper-plane-o" style="font-size: 13px; width: 40px; text-align: center;"></i> Subscriptions</div>
+			</div><!-- end of menu -->
+            <div class="container">
+                <div class="inner">
+					<div class="profileheader">
+						<img id="picture" src="" alt="Twitch Bootcamp" target="_blank">
+						<div><a id="visit" href="#" target="_blank"></a></div>
+						<div class="partner"></div>
+					</div>
+
+                </div>
+            </div> <!-- end of container -->
+            <div id="footer">
+
+            </div><!-- end of footer -->
+        </div>
+
+        <script src="js/headertransition.js"></script>
+        <script src="js/navtrigger.js"></script>
+        <script type="text/javascript">
+            $(".nav-trigger").click(function () {
+                $(this).toggleClass("change");
+            });
+        </script>
+		<div class="hiddeniflogged" style="min-height: 100vh; width: 100%;">
+			<a href="http://www.twitchbootcamp.com"><div class="logo">bootcamp<div class="beta">beta</div></div></a>
+			<a class="twitch-connect"><i class="fa fa-twitch" aria-hidden="true"></i> Use App</a>
+			<div class="learnmore"></div>
+			<div class="learnmore2"></div>
+
+			<div class="features">
+
+				<div class="facebook">
+					<div class="fb-like" data-href="https://www.facebook.com/bootcamp.pro/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+			$(".learnmore2").click(function() {
+				$('html,body').animate({
+					scrollTop: $(".features").offset().top},
+					'slow');
+				});
+			</script>
+
+		</div>
+		<script type="text/javascript">
+		var showText = function (target, message, index, interval) {
+			if (index < message.length) {
+				$(target).append(message[index++]);
+				setTimeout(function () { showText(target, message, index, interval); }, interval);
+			}
+		}
+
+		$(function () {
+
+			showText(".learnmore", "Level up your experience.", 0, 100);
+
+		})
+		$(function () {
+
+			showText(".learnmore2", "Learn more", 0, 300);
+
+		});
+		</script>
+	</body>
+</html>
