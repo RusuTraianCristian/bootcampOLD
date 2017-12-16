@@ -11,11 +11,10 @@ $(function() {
 	 	console.log(status);
 
 	 	if (status.authenticated) {
-	 		$('.twitch-connect').hide();
 			$('#header').css("display", "block");
-			$('#footer').css("display", "block");
 			$('#menu').css("display", "block");
 			$('.hiddeniflogged').css("display", "none");
+			$('.features').hide();
 	 		getInfo(function(data) {
 				// checks if logged in to show specified information
 				$('#picture').attr('src',data.logo);
@@ -43,9 +42,8 @@ $(function() {
 	 var logout = function() {
 	     Twitch.logout(function(error) {
 	         // redirects to root URL when logging Off
-			 window.location = "http://twitchbootcamp.com";
+			 window.location = "https://bootcamp.pro";
 			 // shows twitch connect button if logged out
-		     $('.twitch-connect').show();
 		     $('strong').text('');
 		     $('#picture').attr('src','');
 		     $('#visit').text('').attr('href','#');
@@ -54,7 +52,7 @@ $(function() {
 		 });
 	 }
 
-	 $('.twitch-connect').click(function(e) {
+	 $('.secondlogin').click(function(e) {
 	 	e.preventDefault();
 
 	 	login();
