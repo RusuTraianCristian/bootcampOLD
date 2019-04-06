@@ -18,17 +18,23 @@
         <link rel="icon" type="image/png" href="https://bootcamp.pro/bootcamp.png" />
         <link rel="apple-touch-icon" href="https://bootcamp.pro/bootcamp.png">
         <link rel="stylesheet" href="https://bootcamp.pro/etline/style.css">
+
+		<!-- Load React. -->
+  		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
 	</head>
 	<body>
 
 		<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+		<script>(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+  			if (d.getElementById(id)) return;
+  			js = d.createElement(s); js.id = id;
+  			js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 
 		<div id="login-info">
             <div id="header">
@@ -49,6 +55,8 @@
                         <a id="btn-logout" class="btn btn-danger twitch-disconnect" href=""><li>Sign out</li></a>
                     </ul>
                 </div>
+
+				<div class="golive">+</div>
             </div>
             <div id="menu">
 				<div class="menuicon"></div>
@@ -63,8 +71,6 @@
 						<img id="picture" src="" alt="Bootcamp" target="_blank">
 						<div><a id="visit" href="#" target="_blank"></a></div>
 						<div class="partner"></div>
-						<div class="profileupload"><i class="fa fa-cloud-upload" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;upload</span></div>
-						<div class="golive"><i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Go Live</span></div>
 					</div>
                 </div>
             </div> <!-- end of container -->
@@ -99,7 +105,9 @@
 				<div class="fb-like" data-href="https://www.facebook.com/bootcamp.pro/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
 			</div>
 
-			<div class="secondlogin"><i class="fa fa-twitch" style="font-size: 20px" aria-hidden="true"></i> &nbsp;Twitch Connect</div>
+			<div class="secondlogin"><i class="fa fa-twitch" style="font-size: 20px" aria-hidden="true"></i> &nbsp;Sign in with Twitch</div>
+			<div class="youtubelogin"><i class="fa fa-play" style="font-size: 20px" aria-hidden="true"></i> &nbsp;YouTube Connect</div>
+			<div class="mixerlogin"><i class="fa fa-play" style="font-size: 20px" aria-hidden="true"></i> &nbsp;Mixer Connect</div>
 
 		</div>
 		<script type="text/javascript">
@@ -121,5 +129,10 @@
 
 		});
 		</script>
+
+		<!-- start of facebook feedback button -->
+
+		<!-- end of facebook feedback button -->
+
 	</body>
 </html>

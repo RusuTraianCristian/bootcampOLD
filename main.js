@@ -9,7 +9,7 @@ $(function() {
 	 Twitch.init({clientId: 'eg9h1ip6k85n8slq0ia88deew5af8ir'}, function(error, status) {
 
 	 	console.log(status);
-
+		// do stuff if authenticated
 	 	if (status.authenticated) {
 			$('#header').css("display", "block");
 			$('#menu').css("display", "block");
@@ -21,7 +21,7 @@ $(function() {
 				$('.headerphoto').attr('src',data.logo);
 	 			$('#visit').text(data.display_name).attr('href',data.url);
 				$('#username').text(data.display_name);
-				$('.partner').text("Partner:" + " " + data.partner);
+				$('.partner').text("Partner:" + " " + data.partner + " " + "UserID:" + " " + data._id + " " + "Email:" + " " + data.email);
 	 		});
 	 	} else {
 			// hides all user information IF NOT logged in
@@ -34,8 +34,8 @@ $(function() {
 	 var login = function()
 	 {
 	 	Twitch.login({
-			// reads API info from Twitch if logged in
-		  scope: ['user_read', 'channel_read', 'channel_subscriptions']
+			// scopes permissions
+		  scope: ['user_read', 'channel_read', 'channel_subscriptions', 'user:read:email']
 		});
 	 }
 

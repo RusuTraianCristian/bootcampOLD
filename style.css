@@ -69,7 +69,7 @@ body {
     -moz-transition: all 0.8s;
     transition: all 0.8s;
     -o-transition: all 0.8s;
-    background: #0a070f;
+    background: #0d0d11;
 }
 
 .nav-trigger {
@@ -84,7 +84,6 @@ body {
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* IE/Edge */
     user-select: none;
-    margin-left: 10px;
 }
 
 .nav-trigger.change {
@@ -99,10 +98,12 @@ body {
     position: absolute;
     right: 10px;
     top: 60px;
-    background: #17141f;
+    background: #ffffff;
     overflow: hidden;
     display: none;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border: 1px solid #eaf0f6;
+    box-shadow: 0 5px 40px rgba(0,0,0,.1);
+    border-radius: 4px;
 }
 
 .nav ul {
@@ -131,12 +132,12 @@ body {
 }
 
 .nav ul li:hover {
-    background: #0a070f;
-    color: #b9a3e3;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-    -o-transition: all 0.5s;
+    background: #f9f9f9;
+    color: #6b6b6b;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    -o-transition: all 0.2s;
 }
 
 .headerphoto {
@@ -164,17 +165,17 @@ body {
 }
 
 .container {
-    width: calc(100% - 80px);
-    margin: 10px;
-    padding: 30px;
-    min-height: calc(100vh - 130px);
+    width: calc(100% - 0px);
+    margin: 0;
+    padding: 0;
+    min-height: calc(100vh - 50px);
     background: #f9f9f9;
 }
 
 .inner {
     display: block;
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
 }
 
 .facebook {
@@ -251,27 +252,23 @@ body {
 }
 
 .secondlogin {
-    color: black;
+    color: white;
     cursor: pointer;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
-    margin: 100px auto;
+    margin: 0 auto;
     font-family: Arial;
-    font-weight: bold;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
     -khtml-user-select: none;    /* Konqueror */
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* IE/Edge */
     user-select: none;
-    border: 3px solid #8f72ff;
-    background: #8f72ff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+    background-color: rgb(100, 65, 164);
     padding: 12px 24px;
-    border-radius: 3px;
     width: 190px;
-    -webkit-box-shadow: 0 0 12px #8f72ff;
-    box-shadow: 0 0 12px #8f72ff;
 }
 
 .secondlogin:hover {
@@ -279,19 +276,80 @@ body {
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-    -webkit-box-shadow: 0 0 15px #8f72ff;
-    box-shadow: 0 0 15px #8f72ff;
+    -webkit-box-shadow: 0 0 6px #8f72ff;
+    box-shadow: 0 0 6px #8f72ff;
+}
+
+.youtubelogin {
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 100px auto;
+    font-family: Arial;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+    border: 3px solid #f1313d;
+    background: #f1313d;
+    padding: 12px 24px;
+    width: 190px;
+}
+
+.youtubelogin:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 0 0 6px #f1313d;
+    box-shadow: 0 0 6px #f1313d;
+    color: #ffffff;
+}
+
+.mixerlogin {
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 100px auto;
+    font-family: Arial;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+    border: 3px solid #317ef1;
+    background: #317ef1;
+    padding: 12px 24px;
+    width: 190px;
+}
+
+.mixerlogin:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 0 0 6px #317ef1;
+    box-shadow: 0 0 6px #317ef1;
+    color: #ffffff;
 }
 
 #visit {
     float: left;
+    width: 100%;
     text-decoration: none;
-    line-height: 20px;
-    font-size: 40px;
+    line-height: 80px;
+    font-size: 2.25rem;
     cursor: pointer;
     font-family: Arial;
-    margin: 35px 0 0 10px;
-    color: #b9a3e3;
+    font-weight: bold;
+    color: #2d2d2d;
 }
 
 #picture {
@@ -307,11 +365,12 @@ body {
     margin: 35px 0 0 10px;
     font-size: 12px;
     font-family: Arial;
+    color: black;
 }
 
 .profileheader {
     width: 99%;
-    margin: 0 0.5%;
+    margin: 10px 0.5%;
     min-height: 100px;
     color: #b9a3e3;
 }
@@ -409,72 +468,33 @@ body {
 
 ::-webkit-scrollbar {
       height: 10px;
-	  width: 10px;
-	  background: #000000;
+	  width: 6px;
+	  background: #ffffff;
+      border-left: 2px solid #eee;
     }
 ::-webkit-scrollbar-thumb {
-    background: #0d0d11;
-    border: 2px solid #000000;
+    background: #17141f;
+    border: 1px solid #fff;
     -webkit-border-radius: 1ex;
 }
 ::-webkit-scrollbar-corner {
 }
 
-.profileupload {
-    width: 96px;
-    height: 32px;
-    font-size: 11px;
-    text-align: center;
-    line-height: 32px;
-    font-family: Arial;
-    cursor: pointer;
-    text-transform: uppercase;
-    color: #b9a3e3;
-    font-weight: bold;
-    user-select: none;
-    float: right;
-    border: 2px solid #b9a3e3;
-    border-radius: 2px;
-    margin-top: 18px;
-}
-
-.profileupload:hover {
-    color: #cfc0ec;
-    border: 2px solid #cfc0ec;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
 .golive {
-    width: 96px;
-    height: 32px;
-    font-size: 11px;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
     text-align: center;
-    line-height: 32px;
+    line-height: 30px;
+    margin: 10px 10px;
     font-family: Arial;
     cursor: pointer;
     text-transform: uppercase;
-    color: #58d574;
-    font-weight: bold;
+    color: #666666;
     user-select: none;
+    border-radius: 50%;
     float: right;
-    border: 2px solid #58d574;
-    border-radius: 2px;
-    margin-top: 18px;
-    margin-right: 20px;
-}
-
-.golive:hover {
-    color: #7ee896;
-    border: 2px solid #7ee896;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    background: #f9f9f9;
 }
 
 .fa-chevron-down {
