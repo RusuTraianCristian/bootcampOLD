@@ -1,7 +1,7 @@
 // Immediately Invoked Function Expression (IIFE)
 (function() {
     return x * x;
-})();
+}());
 // Function Declaration
 function square(x) {
     return x * x;
